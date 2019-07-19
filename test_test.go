@@ -24,3 +24,23 @@ func TestFind(t *testing.T) {
 		So(res5, ShouldEqual, false)
 	})
 }
+
+func TestFibonacci(t *testing.T) {
+	//0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144,
+	Convey("Subject: Fibonacci \n", t, func() {
+		So(Fibonacci(1), ShouldEqual, 1)
+		So(Fibonacci(2), ShouldEqual, 1)
+		So(Fibonacci(4), ShouldEqual, 3)
+
+	})
+}
+
+func TestJumpFloor(t *testing.T) {
+	//0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144,
+	Convey("Subject: jumpFloor \n", t, func() {
+		So(jumpFloor(1), ShouldEqual, 1)
+		So(jumpFloor(2), ShouldEqual, 2)
+		So(jumpFloor(3), ShouldEqual, 3)
+
+	})
+}
