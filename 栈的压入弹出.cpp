@@ -16,13 +16,30 @@ class Solution {
 public:
     bool IsPopOrder(vector<int> pushV,vector<int> popV) {
         stack<int> tmp;
-        for(int i=0;i<pushV.size();i++){
-            if(tmp.empty()|| tmp.top() != popV){
-                tmp.push(pushV[i]);
-            }else{
-                tmp.pop()
+        int popIndex = 0;
+        int i;
+        for(i=0;i<pushV.size();i++){
+            tmp.push(pushV[i]);
+            while(tmp.empty() == false && tmp.top() == popV[popIndex]){
+                popIndex++;
+                tmp.pop();
             }
-            if()
         }
+        if(tmp.empty()){
+            return true;
+        }
+        return false;
     }
 };
+
+int main(){
+    int a[] = {1,2,3,4,5};
+    vector<int> pushV(a,a+5);
+    int b[] = {4,5,3,2,1};
+    vector<int> popV(b,b+5);
+    int c[] = {4,3,5,1,2};
+    vector<int> popV2(c,c+5);
+    Solution s;
+    printf("shoule be 1 , it == %d\n",s.IsPopOrder(pushV,popV));
+    printf("shoule be 0 ,it  == %d\n",s.IsPopOrder(pushV,popV2));
+}
