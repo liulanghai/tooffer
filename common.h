@@ -3,6 +3,7 @@
 #include <queue>
 #include <stdlib.h>
 #include <stdio.h>
+#include <string>
 using namespace std;
 
 void PrintIntVecotr(vector<int> a){
