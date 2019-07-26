@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string>
+#include <algorithm>
 using namespace std;
 
 void PrintIntVecotr(vector<int> a){
