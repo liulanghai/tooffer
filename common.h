@@ -5,6 +5,8 @@
 #include <stdio.h>
 #include <string>
 #include <algorithm>
+#include <map>
+#include <iostream>
 using namespace std;
 
 void PrintIntVecotr(vector<int> a){
