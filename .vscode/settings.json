@@ -29,6 +29,9 @@
         "tuple": "cpp",
         "typeinfo": "cpp",
         "utility": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "random": "cpp",
+        "string": "cpp",
+        "deque": "cpp"
     }
 }
